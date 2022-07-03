@@ -87,7 +87,7 @@
             <div class="container">
                 <div class="navbar-innr">
                     <ul class="navbar-menu" id="main-nav" style="flex-wrap: wrap;">
-                        <li><a href="/admin"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                        <li><a href="/admin/index"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
                         <li><a href="/admin/contribute"><em class="ikon ikon-coins"></em> Buy Token</a></li>
                         <!-- <li><a href="https://app.uni-metaverso.com/user/staking"><em class="ikon ikon-coins"></em> Staking</a></li> -->
                         <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li>
