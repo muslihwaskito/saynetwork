@@ -1,5 +1,6 @@
 <?php
 	require_once 'config.php';
+	session_start();
 	// Create connection
 	$mysql = new mysqli($servername, $username, $password, $database);
 
@@ -16,24 +17,25 @@
 		$query = mysqli_query($mysql, "SELECT email, name FROM users WHERE email = '$email' and password = '$password'");
 		$result = mysqli_fetch_assoc($query);
 		if ($result) {
-			$response = [
-				'status' => 200,
-				'data' => $result
-			];
-			echo json_encode($response);
+			$_SESSION['user'] = $result;
+            header('Location: /admin/index.php');
 		} else {
-			$response = [
+			$flash_message = [
 				'status' => 401,
 				'message' => 'Email or password is wrong!'
 			];
-			echo json_encode($response);
+			$_SESSION['flash_message'] = $flash_message;
+			header('Location: /auth/index.php');
 		}
     } else {
-        $response = [
-			'status' => 401,
-			'message' => 'Email or password can\'t empty!'
+        $flash_message = [
+			'status' => 422,
+			'message' => 'Email or password can\'t empty!',
+            'data' => $_POST
 		];
-		echo json_encode($response);
+
+        $_SESSION['flash_message'] = $flash_message;
+		header('Location: /auth/index.php');
     }
 	
 ?>
