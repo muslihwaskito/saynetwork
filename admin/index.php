@@ -67,8 +67,7 @@
                                                 class="ti ti-eye"></i>Activity</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
-                                    <li><a href="https://app.uni-metaverso.com/log-out"
-                                            onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i
+                                    <li><a href="/service/logout"><i
                                                 class="ti ti-power-off"></i>Logout</a></li>
                                 </ul>
                                 <form id="logout-form" action="https://app.uni-metaverso.com/logout" method="POST"
