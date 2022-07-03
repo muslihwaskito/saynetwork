@@ -33,7 +33,7 @@
                 $query_user = mysqli_query($mysql, "SELECT email, name FROM users WHERE email = '$email' and password = '$password'");
                 $user = mysqli_fetch_assoc($query_user);
                 $_SESSION['user'] = $user;
-                header('Location: /admin');
+                header('Location: /admin/index');
             } else {
                 echo mysqli_error($mysql);die;
                 $flash_message = [

@@ -18,14 +18,14 @@
 		$result = mysqli_fetch_assoc($query);
 		if ($result) {
 			$_SESSION['user'] = $result;
-            header('Location: /admin');
+            header('Location: /admin/index');
 		} else {
 			$flash_message = [
 				'status' => 401,
 				'message' => 'Email or password is wrong!'
 			];
 			$_SESSION['flash_message'] = $flash_message;
-			header('Location: /auth');
+			header('Location: /auth/index');
 		}
     } else {
         $flash_message = [
@@ -35,7 +35,7 @@
 		];
 
         $_SESSION['flash_message'] = $flash_message;
-		header('Location: /auth');
+		header('Location: /auth/index');
     }
 	
 ?>
