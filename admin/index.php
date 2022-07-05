@@ -116,7 +116,7 @@
                                     <div class="card-innr">
                                         <div class="token-balance token-balance-with-icon">
                                             <div class="token-balance-icon"><img
-                                                    src="https://app.uni-metaverso.com/images/token-symbol-light.png"
+                                                    src="/images/cropped-say-logo-icon--32x32.png"
                                                     alt=""></div>
                                             <div class="token-balance-text">
                                                 <h6 class="card-sub-title">Token Balance</h6>
@@ -149,8 +149,7 @@
                                     <div class="card-innr">
                                         <h6 class="card-title card-title-sm">Pré-sale USay<span
                                                 class="badge badge-success ucap">Running</span></h6>
-                                        <h3 class="text-dark">1 USay = 0.003 USD <span
-                                                class="d-block text-exlight ucap fs-12">1 USD = 333.3 USay</span></h3>
+                                        <h3 class="text-dark">1 USay = 0.003 USD </h3>
                                         <div class="gaps-0-5x"></div>
                                         <div class="d-flex align-items-center justify-content-between mb-0"><a
                                                 href="https://app.uni-metaverso.com/user/contribute"

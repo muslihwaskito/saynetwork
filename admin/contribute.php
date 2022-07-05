@@ -447,7 +447,7 @@
                         <div class="card-innr">
                             <div class="token-balance token-balance-with-icon">
                                 <div class="token-balance-icon"><img
-                                        src="https://app.uni-metaverso.com/images/token-symbol-light.png" alt=""></div>
+                                        src="/images/cropped-say-logo-icon--32x32.png" alt=""></div>
                                 <div class="token-balance-text">
                                     <h6 class="card-sub-title">Token Balance</h6>
                                     <span class="lead">0 <span>USay <em class="fas fa-info-circle fs-11"
