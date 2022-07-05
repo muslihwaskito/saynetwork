@@ -213,6 +213,7 @@
                                                 <label class="pay-option-label" for="payusd">
                                                     <span class="pay-title">
                                                         <em class="pay-icon pay-icon-usd">
+                                                            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                                                             <svg width="20" height="20" viewBox="0 0 256 417" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                                                                 <g fill="currentColor">
                                                                     <polygon fill="#343434" points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32"></polygon>
@@ -286,6 +287,7 @@
                                                 <label class="pay-option-label" for="payusdc">
                                                     <span class="pay-title">
                                                         <em class="pay-icon pay-icon-usdc">
+                                                            <?xml version="1.0" encoding="utf-8"?>
                                                             <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
