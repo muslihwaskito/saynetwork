@@ -512,7 +512,7 @@
 
                                 <div class="tab-pane fade" id="password">
                                     <form class="validate-modern"
-                                        action="https://app.uni-metaverso.com/user/ajax/account/update" method="POST"
+                                        action="/service/update" method="POST"
                                         id="nio-user-password">
                                         <input type="hidden" name="_token"
                                             value="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj"> <input type="hidden"

@@ -64,7 +64,7 @@
                 "xrp": 0.06152,
                 "xlm": 0.1722,
                 "bch": 0.00013248,
-                "bnb": 0.00019072,
+                "bnb": 0.00001,
                 "usdt": 0.04,
                 "trx": 0.574,
                 "usdc": 0.04,
@@ -256,7 +256,7 @@
                                                         </em>
                                                         <span class="pay-cur">BNB</span>
                                                     </span>
-                                                    <span class="pay-amount">0.00019072 BNB</span>
+                                                    <span class="pay-amount">0.00001 BNB</span>
                                                 </label>
                                             </div>
                                         </div>
