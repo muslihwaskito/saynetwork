@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/style-green.css?ver=20220116140">
     <script>
         var access_url = "/service/payment";
-        var minimum_token = 1000,
+        var minimum_token = 0,
             maximum_token = 300000,
             token_price = {
                 "usd": 0.04,
@@ -184,12 +184,12 @@
             <div class="row">
 
                 <div class="main-content  col-lg-8">
-                    <div class="d-lg-none">
+                    <!-- <div class="d-lg-none">
                         <a href="javascript:void(0)"
                             class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet">Conectar metamask <em
                                 class="ti ti-arrow-right"></em></a>
                         <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
-                    </div>
+                    </div> -->
 
                     <div class="content-area card">
                         <div class="card-innr">
@@ -227,8 +227,8 @@
                                                         </em>
                                                         <span class="pay-cur">ETH</span>
                                                     </span>
-                                                    <span class="pay-amount">
-                                                        0.00002162 ETH</span>
+                                                    <!-- <span class="pay-amount">
+                                                        0.00002162 ETH</span> -->
                                                 </label>
                                             </div>
                                         </div>
@@ -256,7 +256,7 @@
                                                         </em>
                                                         <span class="pay-cur">BNB</span>
                                                     </span>
-                                                    <span class="pay-amount">0.00001 BNB</span>
+                                                    <!-- <span class="pay-amount">0.00001 BNB</span> -->
                                                 </label>
                                             </div>
                                         </div>
@@ -275,7 +275,7 @@
                                                         </em>
                                                         <span class="pay-cur">USDT</span>
                                                     </span>
-                                                    <span class="pay-amount">0.04 USDT</span>
+                                                    <!-- <span class="pay-amount">0.04 USDT</span> -->
                                                 </label>
                                             </div>
                                         </div>
@@ -301,7 +301,7 @@
                                                         </em>
                                                         <span class="pay-cur">BTC</span>
                                                     </span>
-                                                    <span class="pay-amount">0.00000148 BTC</span>
+                                                    <!-- <span class="pay-amount">0.00000148 BTC</span> -->
                                                 </label>
                                             </div>
                                         </div>
@@ -330,7 +330,7 @@
                                         quantity of tokens into the amount of your selected currency.</p>
                                 </div>
                                 <div id="nobnb">
-                                    <div class="token-contribute">
+                                    <!-- <div class="token-contribute">
                                         <div class="token-calc">
                                             <div class="token-pay-amount payment-get"><input
                                                     class="input-bordered input-with-hint token-number" type="text"
@@ -387,12 +387,12 @@
                                             <p>Your contribution will be calculated based on exchange rate at the moment
                                                 when your transaction is confirmed.</p>
                                         </div>
-                                    </div>
+                                    </div> -->
     
                                     <div class="pay-buttons">
                                         <div class="pay-buttons pt-0">
                                             <a data-type="offline" href="#g2fa-modal"
-                                                class="btn btn-primary btn-between payment-btn disabled token-payment-btn offline_payment">Make
+                                                class="btn btn-primary btn-between payment-btn token-payment-btn offline_payment">Make
                                                 Payment&nbsp;<i class="ti ti-wallet"></i></a>
                                         </div>
                                         <div class="pay-notes">
@@ -429,6 +429,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" id="data_amount" value="0">
+                                <input type="hidden" id="data_currency" value="BRL">
                             </form>
                         </div>
                     </div>
@@ -529,10 +531,10 @@
                             id="payment-confirm" class="validate-modern" autocomplete="off" novalidate="novalidate">
                             <input type="hidden" name="_token" value="0wP8BuQKQZmXHgwad91fcN9WvIZqbQiVh4Hqxv48"> <input
                                 type="hidden" name="trnx_id" value="8475">
-                            <p class="lead-lg text-primary">Your Order no. <strong class="code-trx">TNX008475</strong> has been placed
+                            <p class="lead-lg text-primary">Your Order has been placed
                                 successfully.</p>
 
-                            <p>Please send <strong class="text-primary amount">50</strong> <strong
+                            <p>Please send <strong
                                     class="text-primary currency">USDC</strong> to the address below. The token balance will
                                 appear in your account only after you transaction gets <strong>3</strong> confirmations
                                 and approved by <strong>Coinpayments</strong>.</p>
@@ -562,7 +564,7 @@
                                             <div class="gaps-2x"></div>
                                             <ul class="d-flex flex-wrap align-items-center guttar-20px guttar-vr-15px">
                                                 <li><a class="btn btn-primary"
-                                                        href="/admin/transaction">Click
+                                                        href="javascrip:void(0)" data-dismiss="modal">Click
                                                         here if you already paid</a></li>
 
                                                 <!-- <li><a href="https://app.uni-metaverso.com/user/transactions" class="btn btn-primary">View Transaction</a></li>  -->

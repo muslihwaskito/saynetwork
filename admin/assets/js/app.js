@@ -472,31 +472,12 @@ function purchase_form_submit(
         token = "TWdY8DLuoccZFmazbZVRFVfGxKx7g4HkXX";
         image = "assets/images/usdt.jpeg"
       }
-    e >= minimum_token && "" != f
-      ? a
-          .post(access_url, {
-            min_token: minimum_token,
-            token_amount: e,
-            currency: f,
-            send: d,
-            token: token
-          })
-          .done((b) => {
-            var result = JSON.parse(b);
-            if (result.status == 200) {
-              u.find(".modal-content .code-trx").html(result.data.code_trx),
-              u.find(".modal-content .amount").html(result.data.amount),
-              u.find(".modal-content .currency").html(result.data.currency.toUpperCase()),
-              u.find(".modal-content .copy-address").val(token),
-              u.find(".modal-content .copy-clipboard").attr("data-clipboard-text", token),
-              u.find(".modal-content .img-thumbnail").attr("src", image),
-              u.modal("show");
-            }
-          })
-          .fail(function (a, b, c) {
-            show_toast("error", msg_is_wrong + "\n" + c), _log(a, b, c);
-          })
-      : ((e = v.val()), (f = w.val()), show_toast("warning", min_tkn_msg));
+      console.log(f)
+      u.find(".modal-content .currency").html(f.toUpperCase());
+      u.find(".modal-content .copy-address").val(token);
+      u.find(".modal-content .copy-clipboard").attr("data-clipboard-text", token);
+      u.find(".modal-content .img-thumbnail").attr("src", image),
+      u.modal("show");
   });
   var x = a("a.user-wallet");
   x.on("click", function (c) {
