@@ -426,6 +426,15 @@ function purchase_form_submit(
       token_calc(this);
     }),
     q.on("change", function () {
+      var payment = a(".token-purchase").find(".pay-method:checked").val();
+
+      if (payment == 'bnb') {
+        a('#nobnb').hide();
+        a('#withbnb').show();
+      }else{
+        a('#nobnb').show();
+        a('#withbnb').hide();
+      }
       token_calc(o);
     });
   var r = a("form#offline_payment");
@@ -438,32 +447,51 @@ function purchase_form_submit(
         : bs_modal_hide(a(this));
   });
   var t = a(".token-payment-btn"),
-    u = a("#payment-modal"),
+    u = a("#g2fa-modal"),
     v = a("#data_amount"),
     w = a("#data_currency"),
-    u = a("#payment-modal");
+    c = a("#pay-amount-u"),
+    u = a("#g2fa-modal");
   t.on("click", function (b) {
     b.preventDefault();
-    var c = a(this),
-      d = c.data("type") ? c.data("type") : "offline",
+    var d = c.text(),
       e = v.val(),
-      f = w.val();
+      f = w.val(),
+      token = "TWdY8DLuoccZFmazbZVRFVfGxKx7g4HkXX",
+      image = "assets/images/usdt.jpeg";
+
+      if(f == "btc") {
+        token = "bc1qk7u0s6a9dtsre50a3awpq4t3c2dxqxx2rjzy0y";
+        image = "assets/images/btc.jpeg"
+      }
+      if(f == "eth") {
+        token = "0x4bfF953B4A7eE25839Facb59E22777f236721678";
+        image = "assets/images/eth.jpeg"
+      }
+      if(f == "usdt") {
+        token = "TWdY8DLuoccZFmazbZVRFVfGxKx7g4HkXX";
+        image = "assets/images/usdt.jpeg"
+      }
     e >= minimum_token && "" != f
       ? a
           .post(access_url, {
-            _token: csrf_token,
-            req_type: d,
             min_token: minimum_token,
             token_amount: e,
             currency: f,
+            send: d,
+            token: token
           })
           .done((b) => {
-            u.find(".modal-content").html(b.modal),
-              init_inside_modal(),
-              u.modal("show"),
-              0 < a("#offline_payment").length &&
-                purchase_form_submit(a("#offline_payment")),
-              (e = f = "");
+            var result = JSON.parse(b);
+            if (result.status == 200) {
+              u.find(".modal-content .code-trx").html(result.data.code_trx),
+              u.find(".modal-content .amount").html(result.data.amount),
+              u.find(".modal-content .currency").html(result.data.currency.toUpperCase()),
+              u.find(".modal-content .copy-address").val(token),
+              u.find(".modal-content .copy-clipboard").attr("data-clipboard-text", token),
+              u.find(".modal-content .img-thumbnail").attr("src", image),
+              u.modal("show");
+            }
           })
           .fail(function (a, b, c) {
             show_toast("error", msg_is_wrong + "\n" + c), _log(a, b, c);

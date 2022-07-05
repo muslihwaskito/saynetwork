@@ -4,19 +4,31 @@
         header('Location: /auth/register.php');
         exit;
     }
+
+    require_once '../service/config.php';
+    
+    // Create connection
+    $mysql = new mysqli($servername, $username, $password, $database);
+    if ($mysql->connect_error) {
+		$die("Connection failed: " . $mysql->connect_error);
+	}
+
+    $user_id = $_SESSION['user']['id'];
+    $query = mysqli_query($mysql, "SELECT * FROM transactions WHERE user_id = '$user_id' ORDER BY id DESC");
+    $trx = mysqli_fetch_all($query, MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en" class="js">
 
 <head>
     <meta charset="utf-8">
-    <meta name="apps" content="DriveCrypto - Drive2Earn">
-    <meta name="author" content="DriveCrypto - Drive2Earn">
+    <meta name="apps" content="USay - Drive2Earn">
+    <meta name="author" content="USay - Drive2Earn">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj">
     <meta name="site-token" content="a084964ab04d678999ea637aEZUK03Nda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
-    <title>User Transactions | DriveCrypto - Drive2Earn</title>
+    <title>User Transactions | USay - Drive2Earn</title>
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
     <script type="text/javascript">
@@ -44,10 +56,10 @@
                     </ul>
 
                     <a class="topbar-logo" href="https://app.uni-metaverso.com">
-                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="DriveCrypto - Drive2Earn"> -->
-                        <img height="40" src="https://app.uni-metaverso.com/uploads/62b50a451369a.png"
-                            srcset="https://app.uni-metaverso.com/uploads/62b50a451369a.png"
-                            alt="DriveCrypto - Drive2Earn">
+                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay - Drive2Earn"> -->
+                        <img height="40" src="/images/say-network-logo-1.png"
+                            srcset="/images/say-network-logo-1.png"
+                            alt="USay - Drive2Earn">
                     </a>
                     <ul class="topbar-nav">
                         <li class="topbar-nav-item relative">
@@ -59,15 +71,11 @@
                                     <h6 class="text-white"><?php echo $_SESSION['user']['email'] ?> <small
                                             class="text-white-50">(UD05630)</small></h6>
                                     <h6 class="user-status-title">Token Balance</h6>
-                                    <div class="user-status-balance">0 <small>DriveCrypto</small></div>
+                                    <div class="user-status-balance">0 <small>USay</small></div>
                                 </div>
                                 <ul class="user-links">
                                     <li><a href="https://app.uni-metaverso.com/user/account"><i
                                                 class="ti ti-id-badge"></i>My Profile</a></li>
-                                    <li><a href="https://app.uni-metaverso.com/user/referral"><i
-                                                class="ti ti-infinite"></i>Referral</a></li>
-                                    <li><a href="https://app.uni-metaverso.com/user/account/activity"><i
-                                                class="ti ti-eye"></i>Activity</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
                                     <li><a href="/service/logout"><i
@@ -92,9 +100,8 @@
                         <!-- <li><a href="https://app.uni-metaverso.com/user/staking"><em class="ikon ikon-coins"></em> Staking</a></li> -->
                         <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li>
                         <li><a href="/admin/account"><em class="ikon ikon-user"></em> Profile</a></li>
-                        <li><a href="/admin/balance"><em class="ikon ikon-my-token"></em> My Token</a></li>
                         <li><a href="/" target="_blank"><em class="ikon ikon-home-link"></em> Main Site</a></li>
-                        <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">
+                        <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-headset-vr" viewBox="0 0 16 16"
                                     style="margin-right: 6px;margin-top: 2px;">
@@ -104,7 +111,7 @@
                                     <path
                                         d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
                                 </svg>
-                                Airdrop</a></li>
+                                Airdrop</a></li> -->
                         <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank"><em class="ikon ikon-my-token"></em>Airdrop</a></li> -->
                     </ul>
                 </div>
@@ -199,15 +206,20 @@
                                         <th class="data-col tnx-status dt-tnxno">Tranx NO</th>
                                         <th class="data-col dt-token">Tokens</th>
                                         <th class="data-col dt-amount">Amount</th>
-                                        <th class="data-col dt-base-amount">USD Amount</th>
+                                        <!-- <th class="data-col dt-base-amount">USD Amount</th> -->
                                         <th class="data-col dt-account">To</th>
                                         <th class="data-col dt-type tnx-type">
                                             <div class="dt-type-text">Type</div>
                                         </th>
-                                        <th class="data-col"></th>
+                                        <!-- <th class="data-col"></th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php 
+                                    foreach ($trx as $key => $t) {
+                                    ?>
+                                    
+                                    
                                     <tr class="data-item tnx-item-6118">
                                         <td class="data-col dt-tnxno">
                                             <div class="d-flex align-items-center">
@@ -215,32 +227,32 @@
                                                     <span class="d-none">Canceled</span>
                                                 </div>
                                                 <div class="fake-class">
-                                                    <span class="lead tnx-id">TNX006118</span>
-                                                    <span class="sub sub-date">20-06-2022 19:54</span>
+                                                    <span class="lead tnx-id"><?php echo $t['code_trx'] ?></span></span>
+                                                    <span class="sub sub-date"><?php echo $t['created_at'] ?></span>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="data-col dt-token">
-                                            <span class="lead token-amount">+1,010</span>
-                                            <span class="sub sub-symbol">DriveCrypto</span>
+                                            <span class="lead token-amount"><?php echo $t['amount'] ?></span>
+                                            <span class="sub sub-symbol">USay</span>
                                         </td>
                                         <td class="data-col dt-amount">
 
-                                            <span class="lead amount-pay">0.176</span>
-                                            <span class="sub sub-symbol">BNB <em class="fas fa-info-circle"
+                                            <span class="lead amount-pay"><?php echo $t['amount'] ?></span>
+                                            <span class="sub sub-symbol"><?php echo strtoupper($t['currency']) ?> <em class="fas fa-info-circle"
                                                     data-toggle="tooltip" data-placement="bottom"
-                                                    title="1 DriveCrypto = 0.000176 BNB"></em></span>
+                                                    title="1 USay = 0.000176 BNB"></em></span>
                                         </td>
-                                        <td class="data-col dt-usd-amount">
+                                        <!-- <td class="data-col dt-usd-amount">
 
                                             <span class="lead amount-pay">40</span>
                                             <span class="sub sub-symbol">USD <em class="fas fa-info-circle"
                                                     data-toggle="tooltip" data-placement="bottom"
-                                                    title="1 DriveCrypto = 0.04 USD"></em></span>
-                                        </td>
+                                                    title="1 USay = 0.04 USD"></em></span>
+                                        </td> -->
                                         <td class="data-col dt-account">
-                                            <span class="lead user-info">0xb39...16911</span>
-                                            <span class="sub sub-date">20-06-2022 19:54</span>
+                                            <span class="lead user-info"><?php echo !empty($t['token'])? substr($t['token'], 0, 5) . '....' . substr($t['token'], -5):''; ?></span>
+                                            <!-- <span class="sub sub-date">20-06-2022 19:54</span> -->
                                         </td>
                                         <td class="data-col dt-type">
                                             <span
@@ -248,7 +260,7 @@
                                             <span
                                                 class="dt-type-sm badge badge-sq badge-outline badge-md badge-success">P</span>
                                         </td>
-                                        <td class="data-col text-right">
+                                        <!-- <td class="data-col text-right">
                                             <a href="javascript:void(0)"
                                                 class="view-transaction btn btn-light-alt btn-xs btn-icon"
                                                 data-id="6118"><em class="ti ti-eye"></em></a>
@@ -259,8 +271,12 @@
                                                 class="link btn btn-light-alt btn-xs btn-icon">
                                                 Já paguei
                                             </a>
-                                        </td>
+                                        </td> -->
                                     </tr>
+
+                                    <?php 
+                                    }
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
@@ -285,7 +301,7 @@
                 <div class="col-lg-7">
                     <div
                         class="d-flex align-items-center justify-content-center justify-content-lg-start guttar-15px pdb-1-5x pb-lg-2">
-                        <div class="copyright-text">&copy; 2022 DriveCrypto - Drive2Earn. All rights reserved</div>
+                        <div class="copyright-text">&copy; 2022 USay - Drive2Earn. All rights reserved</div>
                         <div class="lang-switch relative"><a href="javascript:void(0)"
                                 class="lang-switch-btn toggle-tigger">EN<em class="ti ti-angle-up"></em></a>
                             <div class="toggle-class dropdown-content dropdown-content-up">

@@ -10,13 +10,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="apps" content="DriveCrypto - Drive2Earn">
-    <meta name="author" content="DriveCrypto - Drive2Earn">
+    <meta name="apps" content="USay - Drive2Earn">
+    <meta name="author" content="USay - Drive2Earn">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj">
     <meta name="site-token" content="a084964ab04d678999ea637aEZUK03Nda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
-    <title>User Account | DriveCrypto - Drive2Earn</title>
+    <title>User Account | USay - Drive2Earn</title>
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
     <!-- Core App v1402456720220116 @iO -->
@@ -41,10 +41,10 @@
                     </ul>
 
                     <a class="topbar-logo" href="https://app.uni-metaverso.com">
-                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="DriveCrypto - Drive2Earn"> -->
-                        <img height="40" src="https://app.uni-metaverso.com/uploads/62b50a451369a.png"
-                            srcset="https://app.uni-metaverso.com/uploads/62b50a451369a.png"
-                            alt="DriveCrypto - Drive2Earn">
+                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay - Drive2Earn"> -->
+                        <img height="40" src="/images/say-network-logo-1.png"
+                            srcset="/images/say-network-logo-1.png"
+                            alt="USay - Drive2Earn">
                     </a>
                     <ul class="topbar-nav">
                         <li class="topbar-nav-item relative">
@@ -56,15 +56,11 @@
                                     <h6 class="text-white"><?php echo $_SESSION['user']['email'] ?> <small
                                             class="text-white-50">(UD05630)</small></h6>
                                     <h6 class="user-status-title">Token Balance</h6>
-                                    <div class="user-status-balance">0 <small>DriveCrypto</small></div>
+                                    <div class="user-status-balance">0 <small>USay</small></div>
                                 </div>
                                 <ul class="user-links">
                                     <li><a href="https://app.uni-metaverso.com/user/account"><i
                                                 class="ti ti-id-badge"></i>My Profile</a></li>
-                                    <li><a href="https://app.uni-metaverso.com/user/referral"><i
-                                                class="ti ti-infinite"></i>Referral</a></li>
-                                    <li><a href="https://app.uni-metaverso.com/user/account/activity"><i
-                                                class="ti ti-eye"></i>Activity</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
                                     <li><a href="/service/logout"><i
@@ -89,9 +85,8 @@
                         <!-- <li><a href="https://app.uni-metaverso.com/user/staking"><em class="ikon ikon-coins"></em> Staking</a></li> -->
                         <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li>
                         <li><a href="/admin/account"><em class="ikon ikon-user"></em> Profile</a></li>
-                        <li><a href="/admin/balance"><em class="ikon ikon-my-token"></em> My Token</a></li>
                         <li><a href="/" target="_blank"><em class="ikon ikon-home-link"></em> Main Site</a></li>
-                        <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">
+                        <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-headset-vr" viewBox="0 0 16 16"
                                     style="margin-right: 6px;margin-top: 2px;">
@@ -101,7 +96,7 @@
                                     <path
                                         d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
                                 </svg>
-                                Airdrop</a></li>
+                                Airdrop</a></li> -->
                         <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank"><em class="ikon ikon-my-token"></em>Airdrop</a></li> -->
                     </ul>
                 </div>
@@ -114,12 +109,6 @@
             <div class="row">
 
                 <div class="main-content col-lg-8">
-                    <div class="d-lg-none">
-                        <a href="javascript:void(0)"
-                            class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet">Conectar metamask <em
-                                class="ti ti-arrow-right"></em></a>
-                        <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
-                    </div>
                     <div class="content-area card">
                         <div class="card-innr">
                             <div class="card-head">
@@ -603,12 +592,6 @@
                 </div>
 
                 <div class="aside sidebar-right col-lg-4">
-                    <div class="d-none d-lg-block">
-                        <a href="javascript:void(0)"
-                            class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet">Conectar metamask <em
-                                class="ti ti-arrow-right"></em></a>
-                        <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
-                    </div>
                     <div class="account-info card">
                         <div class="card-innr">
                             <div class="user-account-status">
@@ -651,7 +634,7 @@
                 <div class="col-lg-7">
                     <div
                         class="d-flex align-items-center justify-content-center justify-content-lg-start guttar-15px pdb-1-5x pb-lg-2">
-                        <div class="copyright-text">&copy; 2022 DriveCrypto - Drive2Earn. All rights reserved</div>
+                        <div class="copyright-text">&copy; 2022 USay - Drive2Earn. All rights reserved</div>
                         <div class="lang-switch relative"><a href="javascript:void(0)"
                                 class="lang-switch-btn toggle-tigger">EN<em class="ti ti-angle-up"></em></a>
                             <div class="toggle-class dropdown-content dropdown-content-up">
@@ -716,12 +699,12 @@
                             <p><strong>Step 2:</strong> Scan the below QR code by your Google Authenticator app, or you
                                 can add account manually.</p>
                             <p><strong>Manually add Account:</strong><br>Account Name: <strong
-                                    class="text-head">DriveCrypto - Drive2Earn</strong> <br> Key: <strong
+                                    class="text-head">USay - Drive2Earn</strong> <br> Key: <strong
                                     class="text-head">FOWVFNBJ4WXRAEZJ</strong></p>
                             <div class="row g2fa-box">
                                 <div class="col-md-4">
                                     <img class="img-thumbnail"
-                                        src="https://app.uni-metaverso.com/qrgen.png?text=otpauth%3A%2F%2Ftotp%2FDriveCrypto%2520-%2520Drive2Earn-Lili%3Alililuluh9%2540gmail.com%3Fsecret%3DFOWVFNBJ4WXRAEZJ%26issuer%3DDriveCrypto%2520-%2520Drive2Earn-Lili"
+                                        src="https://app.uni-metaverso.com/qrgen.png?text=otpauth%3A%2F%2Ftotp%2FUSay%2520-%2520Drive2Earn-Lili%3Alililuluh9%2540gmail.com%3Fsecret%3DFOWVFNBJ4WXRAEZJ%26issuer%3DUSay%2520-%2520Drive2Earn-Lili"
                                         alt="">
                                 </div>
                                 <div class="col-md-8">
