@@ -10,13 +10,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="apps" content="USay - Drive2Earn">
-    <meta name="author" content="USay - Drive2Earn">
+    <meta name="apps" content="USay">
+    <meta name="author" content="USay">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="8ima99bFab4UKEYXB77GihhfVYDLaNZfzXXCB7F1">
     <meta name="site-token" content="a084964ab04d6789999a1844KEYXrBkda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
-    <title>User Dashboard | USay - Drive2Earn</title>
+    <title>User Dashboard | USay</title>
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
     <!-- Core App v1402456720220116 @iO -->
@@ -41,10 +41,10 @@
                     </ul>
 
                     <a class="topbar-logo" href="/">
-                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay - Drive2Earn"> -->
+                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay"> -->
                         <img height="40" src="/images/say-network-logo-1.png"
                             srcset="/images/say-network-logo-1.png"
-                            alt="USay - Drive2Earn">
+                            alt="USay">
                     </a>
                     <ul class="topbar-nav">
                         <li class="topbar-nav-item relative">
@@ -59,7 +59,7 @@
                                     <div class="user-status-balance">0 <small>USay</small></div>
                                 </div>
                                 <ul class="user-links">
-                                    <li><a href="https://app.uni-metaverso.com/user/account"><i
+                                    <li><a href="/admin/account"><i
                                                 class="ti ti-id-badge"></i>My Profile</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
@@ -109,14 +109,6 @@
             <div class="row">
 
                 <div class="main-content col-lg-12">
-                    <div class="d-lg-none">
-                        <a href="javascript:void(0)"
-                            class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x user-wallet">Conectar metamask <em
-                                class="ti ti-arrow-right"></em></a>
-                        <div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
-                    </div>
-
-
                     <div class="content-area user-account-dashboard">
                         <div class="row">
                             <div class="col-lg-4">
@@ -157,8 +149,8 @@
                                     <div class="card-innr">
                                         <h6 class="card-title card-title-sm">Pré-sale USay<span
                                                 class="badge badge-success ucap">Running</span></h6>
-                                        <h3 class="text-dark">1 USay = 0.04 USD <span
-                                                class="d-block text-exlight ucap fs-12">1 USD = 5.22 BRL</span></h3>
+                                        <h3 class="text-dark">1 USay = 0.003 USD <span
+                                                class="d-block text-exlight ucap fs-12">1 USD = 333.3 USay</span></h3>
                                         <div class="gaps-0-5x"></div>
                                         <div class="d-flex align-items-center justify-content-between mb-0"><a
                                                 href="https://app.uni-metaverso.com/user/contribute"
@@ -207,14 +199,14 @@
                                 <div class="card content-welcome-block card-full-height">
                                     <div class="card-innr">
                                         <div class="row guttar-vr-20px">
-                                            <div class="col-sm-5 col-md-4">
+                                            <!-- <div class="col-sm-5 col-md-4">
                                                 <div class="card-image card-image-sm"><img width="240"
                                                         src="https://app.uni-metaverso.com/images/welcome.png" alt="">
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-sm-7 col-md-8">
                                                 <div class="card-content">
-                                                    <h4>Thank you for your interest in our USay - Drive2Earn.
+                                                    <h4>Thank you for your interest in our USay.
                                                     </h4>
                                                     <p><span style="font-size: 1em; color: rgb(73, 84, 99);">You can
                                                             contribute&nbsp;</span><span
@@ -223,7 +215,7 @@
                                                                 via the Buy Token page. You can get a quick answer to
                                                                 any question and learn more about the project on our
                                                                 Telegram: </span></font>
-                                                        https://t.me/drivecrypto_official<font color="#495463"><span
+                                                                https://t.me/uSayNetwork<font color="#495463"><span
                                                                 style="font-size: 1em;">&nbsp;Do not hesitate to invite
                                                                 your friends!</span></font><br>
                                                     </p>
@@ -359,7 +351,7 @@
                 <div class="col-lg-7">
                     <div
                         class="d-flex align-items-center justify-content-center justify-content-lg-start guttar-15px pdb-1-5x pb-lg-2">
-                        <div class="copyright-text">&copy; 2022 USay - Drive2Earn. All rights reserved</div>
+                        <div class="copyright-text">&copy; 2022 USay. All rights reserved</div>
                         <div class="lang-switch relative"><a href="javascript:void(0)"
                                 class="lang-switch-btn toggle-tigger">EN<em class="ti ti-angle-up"></em></a>
                             <div class="toggle-class dropdown-content dropdown-content-up">

@@ -22,13 +22,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="apps" content="USay - Drive2Earn">
-    <meta name="author" content="USay - Drive2Earn">
+    <meta name="apps" content="USay">
+    <meta name="author" content="USay">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj">
     <meta name="site-token" content="a084964ab04d678999ea637aEZUK03Nda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
-    <title>User Transactions | USay - Drive2Earn</title>
+    <title>User Transactions | USay</title>
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
     <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
     <script type="text/javascript">
@@ -56,10 +56,10 @@
                     </ul>
 
                     <a class="topbar-logo" href="https://app.uni-metaverso.com">
-                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay - Drive2Earn"> -->
+                        <!-- <img height="40" src="https://app.uni-metaverso.com/images/logo-light.png" srcset="https://app.uni-metaverso.com/images/logo-light2x.png" alt="USay"> -->
                         <img height="40" src="/images/say-network-logo-1.png"
                             srcset="/images/say-network-logo-1.png"
-                            alt="USay - Drive2Earn">
+                            alt="USay">
                     </a>
                     <ul class="topbar-nav">
                         <li class="topbar-nav-item relative">
@@ -74,7 +74,7 @@
                                     <div class="user-status-balance">0 <small>USay</small></div>
                                 </div>
                                 <ul class="user-links">
-                                    <li><a href="https://app.uni-metaverso.com/user/account"><i
+                                    <li><a href="/admin/account"><i
                                                 class="ti ti-id-badge"></i>My Profile</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
@@ -301,7 +301,7 @@
                 <div class="col-lg-7">
                     <div
                         class="d-flex align-items-center justify-content-center justify-content-lg-start guttar-15px pdb-1-5x pb-lg-2">
-                        <div class="copyright-text">&copy; 2022 USay - Drive2Earn. All rights reserved</div>
+                        <div class="copyright-text">&copy; 2022 USay. All rights reserved</div>
                         <div class="lang-switch relative"><a href="javascript:void(0)"
                                 class="lang-switch-btn toggle-tigger">EN<em class="ti ti-angle-up"></em></a>
                             <div class="toggle-class dropdown-content dropdown-content-up">

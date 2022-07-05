@@ -6,13 +6,13 @@ session_start();
 
 <head>
     <meta charset="utf-8">
-    <meta name="apps" content="USay - Drive2Earn">
-    <meta name="author" content="USay - Drive2Earn">
+    <meta name="apps" content="USay">
+    <meta name="author" content="USay">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="HpyGjfhe8T7rNyCNTsxyGbeE3TPXjeYAJviDGys4">
     <meta name="site-token" content="a084964ab04d678999685b0dNyCNrBkda12245d964">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Sign-in | USay - Drive2Earn</title>
+    <title>Sign-in | USay</title>
     <link rel="stylesheet" href="css/vendor.bundle.css">
     <link rel="stylesheet" href="css/style-green.css">
     <!-- Core App v1402456720220116 @iO -->
@@ -24,10 +24,10 @@ session_start();
         <div class="page-ath-content" style="background-image: unset;background-color: #010122;">
             <div class="page-ath-header"><a href="/" class="page-ath-logo"><img
                         class="page-ath-logo-img" src="/images/say-network-logo-1.png" srcset="/images/say-network-logo-1.png"
-                        alt="USay - Drive2Earn"></a></div>
+                        alt="USay"></a></div>
             <div class="page-ath-form">
 
-                <h2 class="page-ath-heading">Sign up <small>Create New USay - Drive2Earn Account</small></h2>
+                <h2 class="page-ath-heading">Sign up <small>Create New USay Account</small></h2>
                 <form class="register-form" method="POST" action="/service/register.php" id="register">
                     <?php
                         if (isset($_SESSION['flash_message']) && $_SESSION['flash_message']['status'] == '401') {
@@ -109,7 +109,7 @@ session_start();
                             fa-twitter"></em></a></li>
                     <li><a href="https://t.me/uSayNetwork"><em class="fab fa-telegram-plane"></em></a></li>
                 </ul>
-                <div class="copyright-text">&copy; 2022 USay - Drive2Earn. All rights reserved</div>
+                <div class="copyright-text">&copy; 2022 USay. All rights reserved</div>
             </div>
         </div>
     </div>
