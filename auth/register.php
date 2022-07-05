@@ -21,8 +21,8 @@ session_start();
 <body class="page-ath theme-modern page-ath-modern page-ath-alt">
 
     <div class="page-ath-wrap">
-        <div class="page-ath-content">
-            <div class="page-ath-header"><a href="/ class="page-ath-logo"><img
+        <div class="page-ath-content" style="background-image: unset;background-color: #010122;">
+            <div class="page-ath-header"><a href="/" class="page-ath-logo"><img
                         class="page-ath-logo-img" src="/images/say-network-logo-1.png" srcset="/images/say-network-logo-1.png"
                         alt="USay - Drive2Earn"></a></div>
             <div class="page-ath-form">
