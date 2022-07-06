@@ -17,8 +17,9 @@
     <meta name="site-token" content="a084964ab04d678999ea637aEZUK03Nda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
     <title>USay Token Balance | USay</title>
-    <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
-    <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
+    <title>User Dashboard | USay</title>
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=20220116140">
+    <link rel="stylesheet" href="assets/css/style-green.css?ver=20220116140">
     <!-- Core App v1402456720220116 @iO -->
 </head>
 
@@ -236,9 +237,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center order-lg-last text-lg-right pdb-2x pb-lg-0">
                     <ul class="socials">
-                        <li><a href="https://twitter.com/drive_crypto?s=21&t=Zj5U8m98dliL5dhs5NOqCQ""><em class=" fab
+                        <li><a href="https://twitter.com/uSayNetwork"><em class=" fab
                                 fa-twitter"></em></a></li>
-                        <li><a href="https://t.me/drivecrypto_official"><em class="fab fa-telegram-plane"></em></a></li>
+                        <li><a href="https://t.me/uSayNetwork"><em class="fab fa-telegram-plane"></em></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-7">
@@ -285,9 +286,9 @@
             msg_use_modern_browser = "Please use a modern browser to properly view this template!",
             num_fmt = true;
     </script>
-    <script src="https://app.uni-metaverso.com/assets/js/jquery.bundle.js?ver=20220116140"></script>
-    <script src="https://app.uni-metaverso.com/assets/js/script.js?ver=20220116140"></script>
-    <script src="https://app.uni-metaverso.com/assets/js/app.js?ver=20220116140"></script>
+    <script src="assets/js/jquery.bundle.js?ver=20220116140"></script>
+    <script src="assets/js/script.js?ver=20220116140"></script>
+    <script src="assets/js/app.js?ver=20220116140"></script>
     <script type="text/javascript">
     </script>
 </body>

@@ -482,9 +482,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center order-lg-last text-lg-right pdb-2x pb-lg-0">
                     <ul class="socials">
-                        <li><a href="https://twitter.com/drive_crypto?s=21&t=Zj5U8m98dliL5dhs5NOqCQ""><em class=" fab
+                        <li><a href="https://twitter.com/uSayNetwork"><em class=" fab
                                 fa-twitter"></em></a></li>
-                        <li><a href="https://t.me/drivecrypto_official"><em class="fab fa-telegram-plane"></em></a></li>
+                        <li><a href="https://t.me/uSayNetwork"><em class="fab fa-telegram-plane"></em></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-7">

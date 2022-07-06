@@ -4,6 +4,19 @@
         header('Location: /auth/index');
         exit;
     }
+
+    require_once '../service/config.php';
+	
+	// Create connection
+	$mysql = new mysqli($servername, $username, $password, $database);
+
+	// Check connection
+	if ($mysql->connect_error) {
+		$die("Connection failed: " . $mysql->connect_error);
+	}
+
+    $query = mysqli_query($mysql, "SELECT * FROM setting limit 1");
+    $result = mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <html lang="en" class="js">
@@ -17,8 +30,8 @@
     <meta name="site-token" content="a084964ab04d6789999a1844KEYXrBkda12245d964">
     <link rel="shortcut icon" href="https://app.uni-metaverso.com/images/favicon.png">
     <title>User Dashboard | USay</title>
-    <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/vendor.bundle.css?ver=20220116140">
-    <link rel="stylesheet" href="https://app.uni-metaverso.com/assets/css/style-green.css?ver=20220116140">
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=20220116140">
+    <link rel="stylesheet" href="assets/css/style-green.css?ver=20220116140">
     <!-- Core App v1402456720220116 @iO -->
 </head>
 
@@ -229,11 +242,11 @@
                                             <h5 class="card-title card-title-sm">Token Sales Progress</h5>
                                         </div>
                                         <ul class="progress-info">
-                                            <li><span>Raised Amount <br></span>24,541,151 USay</li>
+                                            <li><span>Raised Amount <br></span><?php echo $result['invested'] ?> USay</li>
                                             <li><span>Total Token <br></span>1,000,000,000 USay</li>
                                         </ul>
                                         <div class="progress-bar no-had-soft">
-                                            <div class="progress-percent" data-percent="2.5"></div>
+                                            <div class="progress-percent" data-percent="<?php echo $result['percent'] ?>"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -339,9 +352,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center order-lg-last text-lg-right pdb-2x pb-lg-0">
                     <ul class="socials">
-                        <li><a href="https://twitter.com/drive_crypto?s=21&t=Zj5U8m98dliL5dhs5NOqCQ""><em class=" fab
+                        <li><a href="https://twitter.com/uSayNetwork"><em class=" fab
                                 fa-twitter"></em></a></li>
-                        <li><a href="https://t.me/drivecrypto_official"><em class="fab fa-telegram-plane"></em></a></li>
+                        <li><a href="https://t.me/uSayNetwork"><em class="fab fa-telegram-plane"></em></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-7">
@@ -388,9 +401,9 @@
             msg_use_modern_browser = "Please use a modern browser to properly view this template!",
             num_fmt = true;
     </script>
-    <script src="https://app.uni-metaverso.com/assets/js/jquery.bundle.js?ver=20220116140"></script>
-    <script src="https://app.uni-metaverso.com/assets/js/script.js?ver=20220116140"></script>
-    <script src="https://app.uni-metaverso.com/assets/js/app.js?ver=20220116140"></script>
+    <script src="assets/js/jquery.bundle.js?ver=20220116140"></script>
+    <script src="assets/js/script.js?ver=20220116140"></script>
+    <script src="assets/js/app.js?ver=20220116140"></script>
     <script type="text/javascript">
     </script>
 </body>
