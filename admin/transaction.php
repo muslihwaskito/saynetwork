@@ -81,9 +81,6 @@
                                     <li><a href="/service/logout"><i
                                                 class="ti ti-power-off"></i>Logout</a></li>
                                 </ul>
-                                <form id="logout-form" action="https://app.uni-metaverso.com/logout" method="POST"
-                                    style="display: none;"> <input type="hidden" name="_token"
-                                        value="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj"> </form>
                             </div>
                         </li>
                     </ul>
@@ -98,7 +95,7 @@
                         <li><a href="/admin/index"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
                         <li><a href="/admin/contribute"><em class="ikon ikon-coins"></em> Buy Token</a></li>
                         <!-- <li><a href="https://app.uni-metaverso.com/user/staking"><em class="ikon ikon-coins"></em> Staking</a></li> -->
-                        <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                        <!-- <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li> -->
                         <li><a href="/admin/account"><em class="ikon ikon-user"></em> Profile</a></li>
                         <li><a href="/" target="_blank"><em class="ikon ikon-home-link"></em> Main Site</a></li>
                         <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">

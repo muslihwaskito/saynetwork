@@ -131,8 +131,8 @@
                                 <div class="user-status">
                                     <h6 class="text-white"><?php echo $_SESSION['user']['email'] ?> <small
                                             class="text-white-50">(UD05630)</small></h6>
-                                    <h6 class="user-status-title">Token Balance</h6>
-                                    <div class="user-status-balance">0 <small>USay</small></div>
+                                    <h6 class="user-status-title"><?php echo $_SESSION['user']['name'] ?></h6>
+                                    <!-- <div class="user-status-balance">0 <small>USay</small></div> -->
                                 </div>
                                 <ul class="user-links">
                                     <li><a href="/admin/account"><i
@@ -141,9 +141,6 @@
                                 <ul class="user-links bg-light">
                                     <li><a href="/service/logout"><i class="ti ti-power-off"></i>Logout</a></li>
                                 </ul>
-                                <form id="logout-form" action="https://app.uni-metaverso.com/logout" method="POST"
-                                    style="display: none;"> <input type="hidden" name="_token"
-                                        value="rudaMBfrCx0REZUKlBWzHIwxhdNQ1dv1li2DG7Fj"> </form>
                             </div>
                         </li>
                     </ul>
@@ -158,7 +155,7 @@
                         <li><a href="/admin/index"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
                         <li><a href="/admin/contribute"><em class="ikon ikon-coins"></em> Buy Token</a></li>
                         <!-- <li><a href="https://app.uni-metaverso.com/user/staking"><em class="ikon ikon-coins"></em> Staking</a></li> -->
-                        <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                        <!-- <li><a href="/admin/transaction"><em class="ikon ikon-transactions"></em> Transactions</a></li> -->
                         <li><a href="/admin/account"><em class="ikon ikon-user"></em> Profile</a></li>
                         <li><a href="/" target="_blank"><em class="ikon ikon-home-link"></em> Main Site</a></li>
                         <!-- <li><a href="https://t.me/UniMetaversoBot?start=r08016730640" target="_blank">
@@ -447,25 +444,28 @@
                         <div class="card-innr">
                             <div class="token-balance token-balance-with-icon">
                                 <div class="token-balance-icon"><img
-                                        src="/images/cropped-say-logo-icon--32x32.png" alt=""></div>
+                                        src="/images/cropped-say-logo-icon--32x32.png"
+                                        alt=""></div>
                                 <div class="token-balance-text">
-                                    <h6 class="card-sub-title">Token Balance</h6>
-                                    <span class="lead">0 <span>USay <em class="fas fa-info-circle fs-11"
-                                                data-toggle="tooltip" data-placement="right"
+                                    <h6 class="card-sub-title">USay Network</h6>
+                                    <!-- <span class="lead">0 <span>USay <em
+                                                class="fas fa-info-circle fs-11" data-toggle="tooltip"
+                                                data-placement="right"
                                                 title="Equivalent to ~ USD"></em></span></span>
-                                    <span class="lead" style="margin-left: 10px"> <span> <em>USD</em> ~ </span>
+                                    <span class="lead" style="margin-left: 10px"> <span> <em>USD</em> ~
+                                        </span> -->
                                 </div>
                             </div>
                             <div class="token-balance token-balance-s2">
-                                <h6 class="card-sub-title">Your Contribution in</h6>
-                                <ul class="token-balance-list">
+                                <h6 class="card-sub-title">welcome to USaynetwork ICO sale</h6>
+                                <!-- <ul class="token-balance-list">
                                     <li class="token-balance-sub"><span class="lead">~</span><span
                                             class="sub">USD</span></li>
                                     <li class="token-balance-sub"><span class="lead">~</span><span
                                             class="sub">BNB</span></li>
                                     <li class="token-balance-sub"><span class="lead">~</span><span
                                             class="sub">BRL</span></li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="token-balance token-balance-s2">
                             </div>
