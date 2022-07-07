@@ -46,7 +46,7 @@ session_start();
                             <label for="remember-me">Remember Me</label>
                         </div>
                         <div>
-                            <a href="https://app.uni-metaverso.com/password/reset">Forgot password?</a>
+                            <!-- <a href="https://app.uni-metaverso.com/password/reset">Forgot password?</a> -->
                             <div class="gaps-2x"></div>
                         </div>
                     </div>

@@ -86,9 +86,9 @@ session_start();
                     <div class="input-item text-left">
                         <input name="terms" class="input-checkbox input-checkbox-md" id="agree" type="checkbox"
                             required="required" data-msg-required="You should accept our terms and policy.">
-                        <label for="agree">I agree to the <a target="_blank"
-                                href="https://app.uni-metaverso.com/terms-and-condition">Terms and Condition</a> and <a
-                                target="_blank" href="https://app.uni-metaverso.com/privacy-policy">Privacy and
+                        <label for="agree">I agree to the <a
+                                href="#">Terms and Condition</a> and <a
+                                href="#">Privacy and
                                 Policy</a>.</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Create Account</button>
