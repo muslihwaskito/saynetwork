@@ -159,7 +159,7 @@
                                     <div class="card-innr">
                                         <h6 class="card-title card-title-sm">Pré-sale USay<span
                                                 class="badge badge-success ucap">Running</span></h6>
-                                        <h3 class="text-dark">1 USay = 0.003 USD </h3>
+                                        <h3 class="text-dark">1 USay = 0.04 USD </h3>
                                         <div class="gaps-0-5x"></div>
                                         <div class="d-flex align-items-center justify-content-between mb-0"><a
                                                 href="/admin/contribute"
