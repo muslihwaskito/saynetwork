@@ -243,7 +243,7 @@
                                         </div>
                                         <ul class="progress-info">
                                             <li><span>Raised Amount <br></span><?php echo $result['invested'] ?> USay</li>
-                                            <li><span>Total Token <br></span>1,000,000,000 USay</li>
+                                            <li><span>Total Token <br></span>100,000,000 USay</li>
                                         </ul>
                                         <div class="progress-bar no-had-soft">
                                             <div class="progress-percent" data-percent="<?php echo $result['percent'] ?>"></div>
